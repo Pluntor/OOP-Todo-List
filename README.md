@@ -3,6 +3,7 @@
 This version includes:
 - creating tasks with deadline date,
 - moving done tasks to done section,
+- deleting unnecessary tasks (both from todo and done section) 
 - filtering and higlighting active tasks,
 - highlighting done tasks that matches phrase written in text input field.
 

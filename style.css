@@ -1,0 +1,180 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+section.header {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+}
+
+section.tasks {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  margin-top: 20px;
+}
+
+article.toDoArticle,
+article.doneArticle {
+  height: 40vh;
+  overflow-y: auto;
+  width: 50vw;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+div.labelProgressWrap {
+  display: flex;
+  flex-direction: row;
+  justify-content: left;
+  margin: 5px 10px;
+  width: 20%;
+}
+
+div.progressWrap {
+  display: flex;
+  flex-direction: column;
+  width: 100%;
+}
+
+div.progress {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  margin: 5px 0;
+  border: 1px solid #000;
+  width: 100%;
+}
+
+div.progressLabel {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: space-between;
+  font-size: 0.9em;
+}
+
+div.progressLabel,
+label {
+  font-family: "Ubuntu";
+}
+
+div.done,
+div.todo {
+  display: none;
+  flex-direction: row;
+  align-items: center;
+  justify-content: center;
+  height: 100%;
+  color: #000;
+  font-family: "ubuntu";
+  min-width: 0.7vw;
+}
+
+div.done {
+  background-color: #0f0;
+  display: flex;
+}
+
+div.todo {
+  background-color: #e40;
+  display: flex;
+}
+
+div.task {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: space-around;
+  width: 40vw;
+}
+
+button {
+  height: 3vh;
+  width: 6vw;
+  border: 1px solid transparent;
+  background-color: #bbb;
+  border-radius: 3px;
+  margin: 5px 3px;
+  cursor: pointer;
+}
+
+button.done {
+  width: 5vw;
+}
+
+button.toDoDelete,
+button.doneDelete {
+  width: 3vw;
+}
+
+button.done:hover {
+  transition: ease-in 0.1s;
+  background-color: #0d0;
+  box-shadow: 0 0 10px 2px #0a0;
+}
+
+button.toDoDelete:hover,
+button.doneDelete:hover {
+  transition: ease-in 0.1s;
+  background-color: #f60;
+  box-shadow: 0 0 5px 2px #f30;
+}
+
+input {
+  margin: 10px 5px;
+  width: 18vw;
+}
+
+input#toDoDate {
+  width: 7vw;
+}
+
+label {
+  margin: 5px 10px;
+}
+
+p.taskDate {
+  margin: 0 1vw;
+  font-family: "Segoe UI", serif;
+}
+
+span.highlight {
+  color: #fff;
+  background-color: #364de4;
+}
+
+ul[data-id="doneList"] > div.task > li {
+  color: #777;
+  text-decoration: line-through;
+}
+
+li {
+  list-style: none;
+  display: block;
+  flex-grow: 1;
+  max-width: 30vw;
+  overflow-wrap: break-word;
+  font-family: "Ubuntu";
+}
+
+h1 {
+  font-family: "Poppins", sans-serif;
+  font-size: 26px;
+}
+
+h2 {
+  font-family: "Poppins", sans-serif;
+  font-size: 22px;
+}
+
+form {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}

@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta http-equiv="X-UA-Compatible" content="ie=edge" />
+    <link rel="stylesheet" href="style.css" />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Poppins&family=Ubuntu&display=swap"
+      rel="stylesheet"
+    />
+
+    <title>ToDoList OOP</title>
+  </head>
+
+  <body>
+    <section class="header">
+      <div class="formWrap">
+        <form action="" id="submit">
+          <input
+            id="input"
+            type="text"
+            placeholder="Wpisz zadanie do dodania..."
+          />
+          <label for="toDoDate"
+            >Do kiedy ma być zrobione?
+            <input id="toDoDate" type="date" />
+          </label>
+          <button id="add">Dodaj zadanie</button>
+        </form>
+      </div>
+      <div class="labelProgressWrap">
+        <label for="prog">Postęp:</label>
+        <div class="progressWrap">
+          <div class="progress" id="prog">
+            <div class="todo">0</div>
+            <div class="done">0</div>
+          </div>
+
+          <div class="progressLabel">
+            <div class="toDoLabel">Do wykonania</div>
+            <div class="doneLabel">Wykonane</div>
+          </div>
+        </div>
+      </div>
+    </section>
+    <section class="tasks">
+      <article class="toDoArticle">
+        <h1 data-id="toDoHeader">
+          Ilość zadań do wykonania: <span class="toDoCounter">0</span>
+        </h1>
+        <ul data-id="toDoList"></ul>
+      </article>
+      <article class="doneArticle">
+        <h2 data-id="doneHeader">
+          Ilość zadań wykonanych: <span class="doneCounter">0</span>
+        </h2>
+        <ul data-id="doneList"></ul>
+      </article>
+    </section>
+    <script src="Start.js" type="module"></script>
+  </body>
+</html>
